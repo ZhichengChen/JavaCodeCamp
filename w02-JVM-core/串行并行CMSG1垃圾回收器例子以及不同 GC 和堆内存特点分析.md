@@ -138,7 +138,7 @@ Heap
 
 结果如下：
 
-![Screen Shot 2022-05-10 at 19.56.56](./img/Screen Shot 2022-05-10 at 19.56.56.png)
+![Screen Shot 2022-05-10 at 19.56.56](https://raw.githubusercontent.com/ZhichengChen/JavaCodeCamp/main/w02-JVM-core/img/Screen%20Shot%202022-05-10%20at%2019.56.56.png)
 
 ### 总结
 
@@ -222,7 +222,7 @@ Heap
 
 ### 使用 [GCEasy](https://gceasy.io/) 分析
 
-![Screen Shot 2022-05-10 at 20.05.51](./img/Screen Shot 2022-05-10 at 20.05.51.png)
+![Screen Shot 2022-05-10 at 20.05.51](https://raw.githubusercontent.com/ZhichengChen/JavaCodeCamp/main/w02-JVM-core/img/Screen%20Shot%202022-05-10%20at%2020.05.51.png)
 
 ### 总结
 
@@ -393,9 +393,9 @@ Heap
 
 ### 使用 [GCEasy](https://gceasy.io/) 分析
 
-![Screen Shot 2022-05-10 at 20.19.50](./img/Screen Shot 2022-05-10 at 20.19.50.png)
+![Screen Shot 2022-05-10 at 20.19.50](https://raw.githubusercontent.com/ZhichengChen/JavaCodeCamp/main/w02-JVM-core/img/Screen%20Shot%202022-05-10%20at%2020.19.50.png)
 
-![Screen Shot 2022-05-10 at 20.21.14](./img/Screen Shot 2022-05-10 at 20.21.14.png)
+![Screen Shot 2022-05-10 at 20.21.14](https://raw.githubusercontent.com/ZhichengChen/JavaCodeCamp/main/w02-JVM-core/img/Screen%20Shot%202022-05-10%20at%2020.21.14.png)
 
 ### 总结
 
@@ -678,9 +678,11 @@ $ java -XX:+PrintGC -Xmx1g -Xms1g -XX:+PrintGCDateStamps -XX:+UseG1GC GCLogAnaly
 
 ### 使用 [GCEasy](https://gceasy.io/) 分析
 
-![](./img/Screen Shot 2022-05-10 at 20.50.49.png)
+![](https://github.com/ZhichengChen/JavaCodeCamp/blob/main/w02-JVM-core/img/Screen%20Shot%202022-05-10%20at%2020.50.49.png?raw=true)
 
-### ![Screen Shot 2022-05-10 at 20.52.03](/Users/zhichengchen/Library/Application Support/typora-user-images/Screen Shot 2022-05-10 at 20.52.03.png)总结
+![Screen Shot 2022-05-10 at 20.52.03](https://raw.githubusercontent.com/ZhichengChen/JavaCodeCamp/main/w02-JVM-core/img/Screen%20Shot%202022-05-10%20at%2020.52.03.png)
+
+### 总结
 
 G1 GC 的设计目标是将 STW 停顿的时间和分布，变成可预期和可配置的。G1 GC 堆不在分成年轻代和老年代，而是划分为多个（通常是 2048 个）小块。每个块可能一会被定义为 Eden 区，一会定义成 Survivor 区或者 Old 区。这样可以每次只处理一部分内存块，每次 GC 暂停都会收集所有的年轻代的内存块，但一般只包含部分老年代内存块。在并发阶段估算每个小堆块存活的对象的总数。垃圾最多的小块会被优先收集。
 
