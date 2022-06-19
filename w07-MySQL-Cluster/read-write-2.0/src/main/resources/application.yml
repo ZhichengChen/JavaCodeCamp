@@ -1,0 +1,31 @@
+server:
+  port:8081
+
+spring:
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  shardingsphere:
+    datasource:
+      names: read, write
+      ds_0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbcUrl: jdbc:mysql://localhost:3306/JavaCodeCamp?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: root
+      ds_1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbcUrl: jdbc:mysql://localhost:3307/JavaCodeCamp?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: root
+    config:
+      masterslave:
+        load-balance-algorithm-type: round_robin
+        name: readwrite2
+        master-data-source-name: write
+        slave-data-source-names: read
