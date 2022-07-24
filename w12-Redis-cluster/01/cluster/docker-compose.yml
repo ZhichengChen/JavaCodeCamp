@@ -1,0 +1,53 @@
+version: '3.1'
+services:
+  redis0:
+    image: redis0
+    container_name: redis0
+    ports:
+      - 7000:7000
+      - 17000:17000
+    command: redis-server /usr/local/etc/redis/redis.conf
+  redis1:
+    image: redis1
+    container_name: redis1
+    ports:
+      - 7001:7001
+      - 17001:17001
+    command: redis-server /usr/local/etc/redis/redis.conf
+  redis2:
+    image: redis2
+    container_name: redis2
+    ports:
+      - 7002:7002
+      - 17002:17002
+    command: redis-server /usr/local/etc/redis/redis.conf
+  redis3:
+    image: redis3
+    container_name: redis3
+    ports:
+      - 7003:7003
+      - 17003:17003
+    command: redis-server /usr/local/etc/redis/redis.conf
+  redis4:
+    image: redis4
+    container_name: redis4
+    ports:
+      - 7004:7004
+      - 17004:17004
+    command: redis-server /usr/local/etc/redis/redis.conf
+  redis5:
+    image: redis5
+    container_name: redis5
+    ports:
+      - 7005:7005
+      - 17005:17005
+    command: redis-server /usr/local/etc/redis/redis.conf
+  cluster:
+    image: redis
+    container_name: cluster
+    ports:
+      - 6379:6379
+
+networks:
+  app_net:
+    external: true
