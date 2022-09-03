@@ -13,7 +13,7 @@
 - JVM 分析调优经验。
 - JVM 疑难情况问题分析。
 
-![JVM 脑图](./assets/JVM.png)
+![JVM 脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/JVM.png)
 
 ## NIO
 
@@ -27,7 +27,7 @@
 - 典型应用：API 网关
 - 自己动手实现 API 网关
 
-![NIO 脑图](./assets/NIO.png)
+![NIO 脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/NIO.png)
 
 ## 并发编程
 
@@ -44,7 +44,7 @@
 - 并发编程经验总结
 
 
-![并发编程 脑图](./assets/Concurrent.png)
+![并发编程 脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/Concurrent.png)
 
 ## Spring 和 ORM 等框架
 
@@ -62,7 +62,7 @@
 - 设计模式与设计原则
 - 单元测试与编程经验
 
-![Spring 和 ORM 等框架脑图](./assets/Framework.png)
+![Spring 和 ORM 等框架脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/Framework.png)
 
 ## MySQL 数据库和 SQL
 
@@ -77,7 +77,7 @@
     - 高效分页
     - 乐观锁与悲观锁
 
-![MySQL 数据库和 SQL 脑图](./assets/MySQL.png)
+![MySQL 数据库和 SQL 脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/MySQL.png)
 
 ## 分库分表
 
@@ -91,7 +91,7 @@
 - 如何做数据迁移
 
 
-![分库分表脑图](./assets/分库分表.png)
+![分库分表脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/分库分表.png)
 
 ## RPC 和微服务
 
@@ -104,7 +104,7 @@
 - Spring Cloud 技术体系
 - 微服务相关技术与工具
 
-![RPC 和微服务脑图](./assets/RPC%20%E5%92%8C%E5%BE%AE%E6%9C%8D%E5%8A%A1.png)
+![RPC 和微服务脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/RPC%20%E5%92%8C%E5%BE%AE%E6%9C%8D%E5%8A%A1.png)
 
 ## 分布式缓存
 
@@ -120,7 +120,7 @@
 - Redisson
 - Hazelcast
 
-![分布式缓存脑图](./assets/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98.png)
+![分布式缓存脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98.png)
 
 ## 分布式消息队列
 
@@ -138,4 +138,4 @@
 - EIP/Camel
 - 动手做 MQ
 
-![分布式消息队列脑图](./assets/%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97.png)
+![分布式消息队列脑图](https://github.com/ZhichengChen/JavaCodeCamp/raw/main/assets/%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97.png)
