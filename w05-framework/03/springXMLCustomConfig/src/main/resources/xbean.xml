@@ -1,0 +1,19 @@
+<beans xmlns="http://xbean.apache.org/schemas/spring/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:st="java://com.chenzhicheng.bean"
+  xsi:schemaLocation="http://xbean.apache.org/schemas/spring/1.0 classpath:/org/apache/xbean/spring/spring-beans.xsd">
+
+  <st:Student id="student" name="berdys"/>
+
+  <st:School id="school">
+    <class1>
+    <st:Klass id="class1">
+      <students>
+      </students>
+    </st:Klass>
+    </class1>
+    <student100>
+      <st:Student name="berdy"/>
+    </student100>
+  </st:School>
+</beans>
